@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taswira Agrovoltaics Ltd</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            font-size: large;
+        }
+        .bg-cover-custom {
+            background-size: cover;
+            background-position: center;
+        }
+        .icon {
+            color: #0e664ef1;
+            margin-right: 10px;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md bg-green-900 text-white">
+        <div class="container mx-auto flex justify-between items-center p-6">
+            <div class="flex items-center">
+                <img src="images/logo.jpg" alt="Logo" class="h-12 w-12 mr-4 rounded-full">
+                <p class="font-bold text-2xl">Taswira Agrovoltaics Ltd</p>
+            </div>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-green-200">Home</a>
+                <a href="#our-story" class="hover:text-green-200">Blog</a>
+                <a href="#about-us" class="hover:text-green-200">About Us</a>
+                <a href="#team" class=" hover:text-green-200">The Team</a>
+                <a href="#contact" class="hover:text-green-200">Contact</a>
+                
+            </nav>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <nav class="flex flex-col space-y-2 p-4">
+                <a href="#home" class="text-gray-600 hover:text-green-500">Home</a>
+                <a href="#blog" class="text-gray-600 hover:text-green-500">Blog</a>
+                <a href="#about" class="text-gray-600 hover:text-green-500">About Us</a>
+                <a href="#team" class="text-gray-600 hover:text-green-500">The Team</a>
+                <a href="#contact" class="text-gray-600 hover:text-green-500">Contact</a>   
+            </nav>
+        </div>
+    </header>
+       <!-- Hero Section -->
+    <section id="hero" class="bg-white py-16 px-10">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-green-900 mb-4">
+                    Creating <span class="text-amber-400">Sustainable</span> Living for African Farmers
+                </h1>
+                <p class="text-gray-700 mb-6">
+                    We help farmers mitigate changing weather and water scarcity to promote food security while creating renewable energy through AI-powered agro-voltaic technology.
+                </p>
+                <a href="#about-us" class="bg-green-900 text-white mt-4 px-6 py-3 rounded-md shadow-md hover:bg-green-600">Learn More</a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="./images/automatic-watering-machine.png" alt="Illustration" class="w-full">
+            </div>
+        </div>
+    </section>
+    
+     <!-- The Problem Section -->
+     <section id="problem" class="bg-cover-custom bg-fixed bg-center py-16 md:px-10" style="background-image: url('./images/farm.jpg');">
+        <div class="container mx-auto bg-white bg-opacity-80 p-8 rounded-lg">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-6 text-center">
+                The Problem
+            </h2>
+            <p class="text-black  mb-6">
+                Agriculture is the backbone of the African economy and most African homes. However, according to UNCTAD, more than 794.7 million people in Africa experience food insecurity. Challenges with access to affordable fertilizer, and fuel, depopulation of rural Africa, and drought cause this.
+            </p>
+            <p class="text-gray-700 mb-6">
+                With the right support and more rural development, we can create sustainable farming that ensures our farmers harvest all year round and build sustainable lives for themselves.
+            </p>
+        </div>
+    </section>
+
+    <!-- Our Solution Section -->
+    <section id="solution" class="bg-gray-100 py-16 px-10">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <img src="./images/ai-farm.png" alt="Agrovoltaic Solution" class="w-full rounded-lg shadow-md">
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0 md:pl-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-6">
+                    Our Solution
+                </h2>
+                <p class="text-gray-700 mb-6">
+                    Our innovation is affordable AI-powered Agrovoltaics. The technology combines voltaics (energy generation) and agriculture. The solar panels generate electricity while shading the crops and protecting the soil from loss of moisture.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 h-6 w-6 text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                        </span>
+                        <span class="ml-3 text-gray-700">Generates Renewable Energy</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 h-6 w-6 text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                        </span>
+                        <span class="ml-3 text-gray-700">Improved Farming Practices</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="flex-shrink-0 h-6 w-6 text-green-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                        </span>
+                        <span class="ml-3 text-gray-700">Sustainability</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+     <!-- Why Farmers Need Our Technology Section -->
+     <section id="why-farmers-need" class="bg-gray-100 py-16 md:px-10">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-12">
+                Why Farmers Need Our Technology
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="info-box bg-white p-8 rounded-lg shadow-md hover:bg-green-100 hover:text-green-900 cursor-pointer">
+                    <img src="./images/renewable-energy.png" alt="Generates Renewable Energy" class="w-32 h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-green-800 mb-2">Generates Renewable Energy</h3>
+                    <p class="text-gray-700">The solar panels create energy for the farmers to use in their homesteads. Taswira Agrovoltaics plans to in the future collect and redistribute the energy generated across the country therefore creating additional income for the farmers.</p>
+                </div>
+                <div class="info-box bg-white p-8 rounded-lg shadow-md hover:bg-green-100 hover:text-green-900 cursor-pointer">
+                    <img src="./images/best-practices.png" alt="Improved Farming Practices" class="w-32 h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-green-800 mb-2">Improved Farming Practices</h3>
+                    <p class="text-gray-700">The solar panels create shade from sunlight which is beneficial for many vegetables. It also helps the soil retain more moisture which helps mitigate drought and increases food production.</p>
+                </div>
+                <div class="info-box bg-white p-8 rounded-lg shadow-md hover:bg-green-100 hover:text-green-900 cursor-pointer">
+                    <img src="./images/sustainability.png" alt="Sustainability" class="w-32 h-20 mx-auto mb-4">
+                    <h3 class="text-xl font-semibold text-green-800 mb-2">Sustainability</h3>
+                    <p class="text-gray-700">Agrovoltaics will generate green energy for homes in rural settings while creating sustainable farming and income for farmers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Our Story Section -->
+<section id="our-story" class="bg-gray-100 py-16 md:px-10">
+    <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-4 text-center">
+            Our Story
+        </h2>
+        <div class="bg-white px-8 rounded-lg shadow-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="order-2 md:order-1 flex flex-col justify-center">
+                    <p class="text-gray-700 mb-4">
+                        As a family, we have always had a farm. After our mother passed on and our father lost his job, the small kitchen garden ensured we did not sleep hungry. We grew leafy vegetables, onions, carrots, and other essentials. We can still remember working on it over the weekends with our father.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        We thought we had seen it all until years later when our father retired to Laikipia County. This semi-arid area has extremely fertile soil. However, its people suffer from food insecurity due to drought. The children here do their homework with kerosene lamps exposing themselves to risks like fume inhalation and fires. This has caused more and more young people to move to the cities in search of better lives, further impoverishing the area.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        In 2023 during drought, David visited Laikipia and was shocked to see the dire need for a solution. Livestock like cows were dropping dead due to hunger. Children went to school hungry, the land was completely bare. He needed to find a solution, and he did: Agrovoltaics.
+                        This marked the birth of Taswira Agrovoltaics.
+                    </p>
+                </div>
+                <div class="order-1 md:order-2 hidden md:flex justify-center items-center overflow-hidden">
+                    <div class="w-full h-4/5 image-container">
+                        <img src="./images/story-2.jpg" alt="Family working on the farm" class="w-full h-full object-cover rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us" class="bg-gray-100 py-16 md:px-10">
+    <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-12 text-center">About Us</h2>
+        <div class=" p-8 ">
+            <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-4">
+                <i class="fas fa-info-circle icon"></i>Who We Are
+            </h3>
+            <p class="text-gray-700 mb-4">
+                Taswira Agrovoltaics Ltd is a sustainable start-up on a mission to change the lives of farmers across Africa and grow the African economy. Our AI-powered Agrovoltaic technology creates green energy in rural homes while encouraging sustainable farming.
+            </p>
+            <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-4">
+                <i class="fas fa-eye icon"></i>Vision
+            </h3>
+            <p class="text-gray-700 mb-4">
+                To create sustainable development for the African economy and farmers.
+            </p>
+            <h3 class="text-2xl md:text-3xl font-semibold text-green-700 mb-4">
+                <i class="fas fa-bullseye icon"></i>Mission
+            </h3>
+            <p class="text-gray-700 ">
+                Have our Agrovoltaics on every farm in Africa. Generate and distribute green energy that supports both the rural and urban population. Help farmers create sustainable farming and harvesting all year round through education and the provision of affordable Agrovoltaic technology.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="team" class="bg-gray-100 py-16 px-10">
+    <div class="container mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-green-800 mb-12 text-center">The Team</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <!-- Team Member 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <img src="/images/kamau.jpg" alt="David Maina" class="w-24 h-24 mx-auto rounded-full mb-4">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">David Maina</h3>
+                <p class="text-gray-600">Managing Director</p>
+            </div>
+            <!-- Team Member 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <img src="images/james.jpg" alt="James Chege" class="w-24 h-24 mx-auto rounded-full mb-4">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">James Chege</h3>
+                <p class="text-gray-600">Chief Technology Director</p>
+            </div>
+            <!-- Team Member 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-lg text-center">
+                <img src="images/karen.jpg" alt="Karen Maina" class="w-24 h-24 mx-auto rounded-full mb-4">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Karen Maina</h3>
+                <p class="text-gray-600">Head of Marketing</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-green-900 text-white py-12 px-5 md:px-10">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+        <!-- Logo and Description -->
+        <div>
+            <img src="./images/logo.jpg" alt="Taswira Logo" class="footer-logo mb-4">
+            <p>Taswira Agrovoltaics Ltd is dedicated to creating sustainable farming solutions for African farmers, ensuring food security and generating renewable energy.</p>
+        </div>
+        <!-- Quick Links -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+            <ul>
+                <li class="mb-2"><a href="#home" class="hover:text-amber-400">Home</a></li>
+                <li class="mb-2"><a href="#about-us" class="hover:text-amber-400">About Us</a></li>
+                <li class="mb-2"><a href="#team" class="hover:text-amber-400">The Team</a></li>
+                <li class="mb-2"><a href="#contact" class="hover:text-amber-400">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Services -->
+        <div>
+            <h3 class="text-xl font-bold mb-4">Services</h3>
+            <ul>
+                <li class="mb-2"><a href="#services" class="hover:text-amber-400">Agrovoltaic Technology</a></li>
+                <li class="mb-2"><a href="#services" class="hover:text-amber-400">Sustainable Farming</a></li>
+                <li class="mb-2"><a href="#services" class="hover:text-amber-400">Green Energy Solutions</a></li>
+                <li class="mb-2"><a href="#services" class="hover:text-amber-400">Farmer Education</a></li>
+            </ul>
+        </div>
+        <!-- Contact Information -->
+        <div id="contact">
+            <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+            <ul>
+                <li class="mb-2 flex items-center">
+                    <i class="fas fa-map-marker-alt mr-2"></i>
+                    <span>123 Sustainable Way, Nairobi, Kenya</span>
+                </li>
+                <li class="mb-2 flex items-center">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    <span>+254 700 000 000</span>
+                </li>
+                <li class="mb-2 flex items-center">
+                    <i class="fas fa-envelope mr-2"></i>
+                    <span>info@taswiraagrovoltaics.com</span>
+                </li>
+            </ul>
+            <div class="flex space-x-4 mt-4">
+                <a href="#" class="text-white hover:text-amber-400"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white hover:text-amber-400"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white hover:text-amber-400"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white hover:text-amber-400"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-10">
+        <p>&copy; 2024 Taswira Agrovoltaics Ltd. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+
+    <script>
+        
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.info-box').forEach(box => {
+          box.addEventListener('click', () => {
+           box.classList.toggle('bg-green-900');
+            box.classList.toggle('text-green-100');
+         box.classList.toggle('bg-white');
+         box.classList.toggle('text-gray-700');
+          });
+        });
+    </script>
+</body>
+</html>
